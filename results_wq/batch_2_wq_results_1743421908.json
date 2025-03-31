@@ -1,0 +1,87 @@
+[
+  {
+    "alpha_expression": "`ts_std_dev(rank(fnd6_prcc), 20) * ts_delta(fnd6_optprcgr, 5) / ts_mean(fnd6_optvol, 10)`",
+    "simulation_result": {
+      "id": "I22d0aWd4P79SB5F5EqNd6",
+      "type": "REGULAR",
+      "status": "ERROR",
+      "message": "Unexpected character '`' near \"ts_std_de\"",
+      "location": {
+        "line": 1,
+        "start": 0,
+        "end": 1,
+        "property": "regular"
+      }
+    },
+    "alpha_details": null,
+    "status": "failed"
+  },
+  {
+    "alpha_expression": "`group_neutralize(rank(fnd6_ppents), fnd6_pidom) * sign(ts_delta(fnd6_prcc, 1)) * log(fnd6_optprcby / fnd6_optprcwa)`",
+    "simulation_result": {
+      "id": "4wMT8adoT4UVb1wF0FNyNXH",
+      "type": "REGULAR",
+      "status": "ERROR",
+      "message": "Unexpected character '`' near \"group_neu\"",
+      "location": {
+        "line": 1,
+        "start": 0,
+        "end": 1,
+        "property": "regular"
+      }
+    },
+    "alpha_details": null,
+    "status": "failed"
+  },
+  {
+    "alpha_expression": "`not_equal(ts_arg_min(fnd6_prcc, 5), 0) and ts_count_nans(fnd6_optvol, 3) > 0`",
+    "simulation_result": {
+      "id": "4D07FL5n451iceQ11KwLEBNa",
+      "type": "REGULAR",
+      "status": "ERROR",
+      "message": "Unexpected character '`' near \"not_equal\"",
+      "location": {
+        "line": 1,
+        "start": 0,
+        "end": 1,
+        "property": "regular"
+      }
+    },
+    "alpha_details": null,
+    "status": "failed"
+  },
+  {
+    "alpha_expression": "`vec_avg(rank(fnd6_optprcby) * ts_scale(fnd6_optvolq, 10, 0.1)) / (1 + ts_std_dev(fnd6_optprcgr, 5))`",
+    "simulation_result": {
+      "id": "25Kh7WNI4Nq9hvTFk3LkFO",
+      "type": "REGULAR",
+      "status": "ERROR",
+      "message": "Unexpected character '`' near \"vec_avg(r\"",
+      "location": {
+        "line": 1,
+        "start": 0,
+        "end": 1,
+        "property": "regular"
+      }
+    },
+    "alpha_details": null,
+    "status": "failed"
+  },
+  {
+    "alpha_expression": "`kth_element(fnd6_optprcby, 5, 1) - kth_element(fnd6_optprcby, 5, 2) * ts_delay(fnd6_optvol, 2) / fnd6_optvol`",
+    "simulation_result": {
+      "id": "1lSaegdeD5hlc9O14AkpIGYb",
+      "type": "REGULAR",
+      "status": "ERROR",
+      "message": "Unexpected character '`' near \"kth_eleme\"",
+      "location": {
+        "line": 1,
+        "start": 0,
+        "end": 1,
+        "property": "regular"
+      }
+    },
+    "alpha_details": null,
+    "status": "failed"
+  }
+]

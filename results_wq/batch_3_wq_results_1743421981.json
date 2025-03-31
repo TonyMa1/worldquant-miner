@@ -1,0 +1,87 @@
+[
+  {
+    "alpha_expression": "`ts_mean(abs(ts_delta(fnd6_prcc, 1)), 5) * ts_rank(fnd6_optvol, 10)`",
+    "simulation_result": {
+      "id": "4aqmAj8aT5cWcqLPzwCqzzO",
+      "type": "REGULAR",
+      "status": "ERROR",
+      "message": "Unexpected character '`' near \"ts_mean(a\"",
+      "location": {
+        "line": 1,
+        "start": 0,
+        "end": 1,
+        "property": "regular"
+      }
+    },
+    "alpha_details": null,
+    "status": "failed"
+  },
+  {
+    "alpha_expression": "`if_else(group_zscore(fnd6_optprcby, fnd6_pidom) > 1, 1, -1) * ts_std_dev(fnd6_optvolq, 30)`",
+    "simulation_result": {
+      "id": "2j0utK8q74q29ZnFCgpUbXH",
+      "type": "REGULAR",
+      "status": "ERROR",
+      "message": "Unexpected character '`' near \"if_else(g\"",
+      "location": {
+        "line": 1,
+        "start": 0,
+        "end": 1,
+        "property": "regular"
+      }
+    },
+    "alpha_details": null,
+    "status": "failed"
+  },
+  {
+    "alpha_expression": "`scale(ts_corr(fnd6_prch, fnd6_optprcgr, 60), longscale=2, shortscale=0.5) * ts_arg_min(fnd6_optvol, 10)`",
+    "simulation_result": {
+      "id": "2tUAec3yb55X9uKfutF3NEH",
+      "type": "REGULAR",
+      "status": "ERROR",
+      "message": "Unexpected character '`' near \"scale(ts_\"",
+      "location": {
+        "line": 1,
+        "start": 0,
+        "end": 1,
+        "property": "regular"
+      }
+    },
+    "alpha_details": null,
+    "status": "failed"
+  },
+  {
+    "alpha_expression": "`trade_when(ts_delta(fnd6_optprcwa, 1) > 0.05 and ts_mean(fnd6_optvol, 5) > 10000, 1, -1)`",
+    "simulation_result": {
+      "id": "1c0XX541l5iRb4BvUk51256",
+      "type": "REGULAR",
+      "status": "ERROR",
+      "message": "Unexpected character '`' near \"trade_whe\"",
+      "location": {
+        "line": 1,
+        "start": 0,
+        "end": 1,
+        "property": "regular"
+      }
+    },
+    "alpha_details": null,
+    "status": "failed"
+  },
+  {
+    "alpha_expression": "`vec_sum(normalize(fnd6_ppeveb, useStd=True)) * ts_rank(fnd6_pnrsho, 20) / ts_count_nans(fnd6_optprcby, 10)`",
+    "simulation_result": {
+      "id": "2MHdMY5ds4R6c2ICHaVmGXT",
+      "type": "REGULAR",
+      "status": "ERROR",
+      "message": "Unexpected character '`' near \"vec_sum(n\"",
+      "location": {
+        "line": 1,
+        "start": 0,
+        "end": 1,
+        "property": "regular"
+      }
+    },
+    "alpha_details": null,
+    "status": "failed"
+  }
+]

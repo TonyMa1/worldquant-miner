@@ -1,0 +1,170 @@
+[
+  {
+    "alpha_expression": "ts_arg_max(ts_rank(volume, 20), 1) * ts_mean(returns, 5)",
+    "simulation_result": {
+      "id": "i0KO47qK54BaQ5s2fhf0w0",
+      "type": "REGULAR",
+      "settings": {
+        "instrumentType": "EQUITY",
+        "region": "USA",
+        "universe": "TOP3000",
+        "delay": 1,
+        "decay": 0,
+        "neutralization": "INDUSTRY",
+        "truncation": 0.08,
+        "pasteurization": "ON",
+        "unitHandling": "VERIFY",
+        "nanHandling": "OFF",
+        "maxTrade": "OFF",
+        "language": "FASTEXPR",
+        "visualization": false
+      },
+      "regular": "ts_arg_max(ts_rank(volume, 20), 1) * ts_mean(returns, 5)",
+      "status": "COMPLETE",
+      "alpha": "ZmLkPLZ"
+    },
+    "alpha_details": {
+      "id": "ZmLkPLZ",
+      "type": "REGULAR",
+      "author": "BM51177",
+      "settings": {
+        "instrumentType": "EQUITY",
+        "region": "USA",
+        "universe": "TOP3000",
+        "delay": 1,
+        "decay": 0,
+        "neutralization": "INDUSTRY",
+        "truncation": 0.08,
+        "pasteurization": "ON",
+        "unitHandling": "VERIFY",
+        "nanHandling": "OFF",
+        "maxTrade": "OFF",
+        "language": "FASTEXPR",
+        "visualization": false
+      },
+      "regular": {
+        "code": "ts_arg_max(ts_rank(volume, 20), 1) * ts_mean(returns, 5)",
+        "description": null,
+        "operatorCount": 4
+      },
+      "dateCreated": "2025-03-31T07:55:12-04:00",
+      "dateSubmitted": null,
+      "dateModified": "2025-03-31T07:55:12-04:00",
+      "name": null,
+      "favorite": false,
+      "hidden": false,
+      "color": null,
+      "category": null,
+      "tags": [],
+      "classifications": [
+        {
+          "id": "DATA_USAGE:SINGLE_DATA_SET",
+          "name": "Single Data Set Alpha"
+        }
+      ],
+      "grade": "UNKNOWN",
+      "stage": "IS",
+      "status": "UNSUBMITTED",
+      "is": {
+        "pnl": 0,
+        "bookSize": 0,
+        "longCount": 0,
+        "shortCount": 0,
+        "turnover": 0.0,
+        "returns": 0.0,
+        "drawdown": 0.0,
+        "margin": 0.0,
+        "sharpe": 0.0,
+        "fitness": null,
+        "startDate": "2018-01-20",
+        "checks": [
+          {
+            "name": "LOW_SHARPE",
+            "result": "FAIL",
+            "limit": 1.25,
+            "value": 0.0
+          },
+          {
+            "name": "LOW_FITNESS",
+            "result": "ERROR",
+            "limit": 1.0
+          },
+          {
+            "name": "LOW_TURNOVER",
+            "result": "FAIL",
+            "limit": 0.01,
+            "value": 0.0
+          },
+          {
+            "name": "HIGH_TURNOVER",
+            "result": "PASS",
+            "limit": 0.7,
+            "value": 0.0
+          },
+          {
+            "name": "CONCENTRATED_WEIGHT",
+            "result": "FAIL"
+          },
+          {
+            "name": "LOW_SUB_UNIVERSE_SHARPE",
+            "result": "ERROR"
+          },
+          {
+            "name": "SELF_CORRELATION",
+            "result": "PENDING"
+          },
+          {
+            "name": "MATCHES_COMPETITION",
+            "result": "PASS",
+            "competitions": [
+              {
+                "id": "challenge",
+                "name": "Challenge"
+              },
+              {
+                "id": "IQC2025S1",
+                "name": "International Quant Championship 2025 Stage 1"
+              }
+            ]
+          }
+        ]
+      },
+      "os": null,
+      "train": null,
+      "test": null,
+      "prod": null,
+      "competitions": null,
+      "themes": null,
+      "pyramids": null,
+      "team": null
+    }
+  },
+  {
+    "alpha_expression": "ts_arg_max(ts_rank(volume, 20), 1) * ts_mean(returns, 5)",
+    "simulation_result": {
+      "id": "i0KO47qK54BaQ5s2fhf0w0",
+      "type": "REGULAR",
+      "settings": {
+        "instrumentType": "EQUITY",
+        "region": "USA",
+        "universe": "TOP3000",
+        "delay": 1,
+        "decay": 0,
+        "neutralization": "INDUSTRY",
+        "truncation": 0.08,
+        "pasteurization": "ON",
+        "unitHandling": "VERIFY",
+        "nanHandling": "OFF",
+        "maxTrade": "OFF",
+        "language": "FASTEXPR",
+        "visualization": false
+      },
+      "regular": "ts_arg_max(ts_rank(volume, 20), 1) * ts_mean(returns, 5)",
+      "status": "COMPLETE",
+      "alpha": "ZmLkPLZ"
+    },
+    "alpha_details": {
+      "error": "Exception fetching: unsupported format string passed to NoneType.__format__"
+    }
+  }
+]
