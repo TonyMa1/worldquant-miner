@@ -1,0 +1,199 @@
+[
+  {
+    "alpha_expression": "ts_delta(rank(close), 5) * (1 - zscore(fnd6_optvol, 10))",
+    "simulation_result": {
+      "id": "pMiRp25B4DS905qx7Jqri5",
+      "type": "REGULAR",
+      "status": "ERROR",
+      "message": "Invalid number of inputs : 2, should be exactly 1 input(s)",
+      "location": {
+        "line": 1,
+        "start": 32,
+        "end": 55,
+        "property": "regular"
+      }
+    },
+    "alpha_details": null,
+    "status": "failed"
+  },
+  {
+    "alpha_expression": "trade_when(ts_cross(fnd6_prcc, fnd6_prch, 10), 1, NaN)",
+    "simulation_result": {
+      "id": "ltJ6lf0k4RUc9W12QXDSInt",
+      "type": "REGULAR",
+      "status": "ERROR",
+      "message": "Attempted to use inaccessible or unknown operator \"ts_cross\"",
+      "location": {
+        "line": 1,
+        "start": 11,
+        "end": 45,
+        "property": "regular"
+      }
+    },
+    "alpha_details": null,
+    "status": "failed"
+  },
+  {
+    "alpha_expression": "(fn_def_tax_assets_net_q - fn_def_tax_liab_q) / fn_def_tax_assets_net_q * zscore(fnd6_pncdq)",
+    "simulation_result": {
+      "id": "49IUpz16M4ha94P1fWMLZUKG",
+      "type": "REGULAR",
+      "settings": {
+        "instrumentType": "EQUITY",
+        "region": "USA",
+        "universe": "TOP3000",
+        "delay": 1,
+        "decay": 0,
+        "neutralization": "INDUSTRY",
+        "truncation": 0.08,
+        "pasteurization": "ON",
+        "unitHandling": "VERIFY",
+        "nanHandling": "OFF",
+        "maxTrade": "OFF",
+        "language": "FASTEXPR",
+        "visualization": false
+      },
+      "regular": "(fn_def_tax_assets_net_q - fn_def_tax_liab_q) / fn_def_tax_assets_net_q * zscore(fnd6_pncdq)",
+      "status": "COMPLETE",
+      "alpha": "EVA3lar"
+    },
+    "alpha_details": {
+      "id": "EVA3lar",
+      "type": "REGULAR",
+      "author": "BM51177",
+      "settings": {
+        "instrumentType": "EQUITY",
+        "region": "USA",
+        "universe": "TOP3000",
+        "delay": 1,
+        "decay": 0,
+        "neutralization": "INDUSTRY",
+        "truncation": 0.08,
+        "pasteurization": "ON",
+        "unitHandling": "VERIFY",
+        "nanHandling": "OFF",
+        "maxTrade": "OFF",
+        "language": "FASTEXPR",
+        "visualization": false
+      },
+      "regular": {
+        "code": "(fn_def_tax_assets_net_q - fn_def_tax_liab_q) / fn_def_tax_assets_net_q * zscore(fnd6_pncdq)",
+        "description": null,
+        "operatorCount": 4
+      },
+      "dateCreated": "2025-03-31T07:49:48-04:00",
+      "dateSubmitted": null,
+      "dateModified": "2025-03-31T07:49:49-04:00",
+      "name": null,
+      "favorite": false,
+      "hidden": false,
+      "color": null,
+      "category": null,
+      "tags": [],
+      "classifications": [],
+      "grade": "UNKNOWN",
+      "stage": "IS",
+      "status": "UNSUBMITTED",
+      "is": {
+        "pnl": 0,
+        "bookSize": 0,
+        "longCount": 0,
+        "shortCount": 0,
+        "turnover": 0.0,
+        "returns": 0.0,
+        "drawdown": 0.0,
+        "margin": 0.0,
+        "sharpe": 0.0,
+        "fitness": null,
+        "startDate": "2018-01-20",
+        "checks": [
+          {
+            "name": "LOW_SHARPE",
+            "result": "FAIL",
+            "limit": 1.25,
+            "value": 0.0
+          },
+          {
+            "name": "LOW_FITNESS",
+            "result": "ERROR",
+            "limit": 1.0
+          },
+          {
+            "name": "LOW_TURNOVER",
+            "result": "FAIL",
+            "limit": 0.01,
+            "value": 0.0
+          },
+          {
+            "name": "HIGH_TURNOVER",
+            "result": "PASS",
+            "limit": 0.7,
+            "value": 0.0
+          },
+          {
+            "name": "CONCENTRATED_WEIGHT",
+            "result": "FAIL"
+          },
+          {
+            "name": "LOW_SUB_UNIVERSE_SHARPE",
+            "result": "ERROR"
+          },
+          {
+            "name": "SELF_CORRELATION",
+            "result": "PENDING"
+          },
+          {
+            "name": "MATCHES_COMPETITION",
+            "result": "PASS",
+            "competitions": [
+              {
+                "id": "challenge",
+                "name": "Challenge"
+              },
+              {
+                "id": "IQC2025S1",
+                "name": "International Quant Championship 2025 Stage 1"
+              }
+            ]
+          }
+        ]
+      },
+      "os": null,
+      "train": null,
+      "test": null,
+      "prod": null,
+      "competitions": null,
+      "themes": null,
+      "pyramids": null,
+      "team": null
+    }
+  },
+  {
+    "alpha_expression": "(fn_def_tax_assets_net_q - fn_def_tax_liab_q) / fn_def_tax_assets_net_q * zscore(fnd6_pncdq)",
+    "simulation_result": {
+      "id": "49IUpz16M4ha94P1fWMLZUKG",
+      "type": "REGULAR",
+      "settings": {
+        "instrumentType": "EQUITY",
+        "region": "USA",
+        "universe": "TOP3000",
+        "delay": 1,
+        "decay": 0,
+        "neutralization": "INDUSTRY",
+        "truncation": 0.08,
+        "pasteurization": "ON",
+        "unitHandling": "VERIFY",
+        "nanHandling": "OFF",
+        "maxTrade": "OFF",
+        "language": "FASTEXPR",
+        "visualization": false
+      },
+      "regular": "(fn_def_tax_assets_net_q - fn_def_tax_liab_q) / fn_def_tax_assets_net_q * zscore(fnd6_pncdq)",
+      "status": "COMPLETE",
+      "alpha": "EVA3lar"
+    },
+    "alpha_details": {
+      "error": "Exception fetching: unsupported format string passed to NoneType.__format__"
+    }
+  }
+]
